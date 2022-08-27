@@ -103,6 +103,7 @@ const AppProvider = ({ children }) => {
 		const { amount, category, difficulty } = quiz;
 		// Contsruct the url from the data we got from the user form
 		url = `${API_ENDPOINT}amount=${amount}&category=${table[category]}&difficulty=${difficulty}&type=multiple`;
+		console.log(url);
 		fetchQuestions(url);
 	};
 
